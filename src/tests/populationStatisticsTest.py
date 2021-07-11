@@ -7,7 +7,7 @@ class PopulationStatisticsTest(unittest.TestCase):
     def setUp(self) -> None:
         self.p_stats = PopulationStatistics()
 
-    def test_something(self):
+    def test_object_instance(self):
         self.assertIsInstance(self.p_stats, PopulationStatistics)
 
 

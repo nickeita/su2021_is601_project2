@@ -38,3 +38,6 @@ class Calculator:
 
     def prod(self):
         pass
+
+    def mean(self):
+        pass
