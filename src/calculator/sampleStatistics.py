@@ -1,7 +1,7 @@
-from calculator import Calculator
+from generalStatistics import GeneralStatistics
 
 
-class SampleStatistics(Calculator):
+class SampleStatistics(GeneralStatistics):
 
     def __init__(self):
         super().__init__()
