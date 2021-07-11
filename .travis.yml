@@ -13,3 +13,8 @@ install:
 
 script:
   - pytest
+  - python -m unittest discover -s Tests
+
+branches:
+  only:
+    - main

@@ -1,5 +1,5 @@
 import unittest
-from populationStatistics import PopulationStatistics
+from populationStatistics.populationStatistics import PopulationStatistics
 
 
 class PopulationStatisticsTest(unittest.TestCase):

@@ -1,5 +1,5 @@
 import unittest
-from sampleStatistics import SampleStatistics
+from sampleStatistics.sampleStatistics import SampleStatistics
 
 
 class SampleStatisticsTest(unittest.TestCase):

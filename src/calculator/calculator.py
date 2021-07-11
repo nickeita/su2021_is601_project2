@@ -1,43 +1,39 @@
+from calculator.addition import addition
+from calculator.subtraction import subtraction
+from calculator.multiplication import multiplication
+from calculator.division import division
+from calculator.nthPower import nth_power
+from calculator.nthRoot import nth_root
+
+
 class Calculator:
+    result = 0
+
     def __init__(self):
         pass
 
-    # a plus b
-    @staticmethod
-    def add(a, b):
-        return a + b
+    def add(self, a, b):
+        self.result = addition(a, b)
+        return self.result
 
-    # b minus a
-    @staticmethod
-    def sub(a, b):
-        return b - a
+    def sub(self, a, b):
+        self.result = subtraction(a, b)
+        return self.result
 
-    # a multiply by b
-    @staticmethod
-    def mul(a, b):
-        return a * b
+    def mul(self, a, b):
+        self.result = multiplication(a, b)
+        return self.result
 
-    # a divided by b
-    @staticmethod
-    def div(a, b):
-        try:
-            return b / a
-        except ArithmeticError:
-            print('Not Found')
+    def div(self, a, b):
+        self.result = division(a, b)
+        return self.result
 
-    # a raised to the power of n
-    @staticmethod
-    def npow(a, n):
-        try:
-            return a ** n
-        except ArithmeticError:
-            print('Not Found')
+    def npow(self, a, n):
+        self.result = nth_power(a, n)
+        return self.result
 
-    def sum(self):
-        pass
+    def nroot(self, a, n):
+        self.result = nth_root(a, n)
+        return self.result
 
-    def prod(self):
-        pass
 
-    def mean(self):
-        pass

@@ -1,4 +1,4 @@
-from generalStatistics import GeneralStatistics
+from generalStatistics.generalStatistics import GeneralStatistics
 
 
 class PopulationStatistics(GeneralStatistics):
@@ -7,12 +7,12 @@ class PopulationStatistics(GeneralStatistics):
         super().__init__()
         pass
 
-    def sample_mean(self):
+    def p_mean(self):
         pass
 
-    def sample_variance(self):
+    def p_var(self):
         pass
 
-    def sample_standard_deviation(self):
+    def p_std_dev(self):
         pass
 

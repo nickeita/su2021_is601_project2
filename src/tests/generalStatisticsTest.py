@@ -1,5 +1,5 @@
 import unittest
-from generalStatistics import GeneralStatistics
+from generalStatistics.generalStatistics import GeneralStatistics
 
 
 class GeneralStatisticsTest(unittest.TestCase):

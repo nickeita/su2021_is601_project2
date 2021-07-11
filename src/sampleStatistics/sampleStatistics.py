@@ -1,4 +1,4 @@
-from generalStatistics import GeneralStatistics
+from generalStatistics.generalStatistics import GeneralStatistics
 
 
 class SampleStatistics(GeneralStatistics):
