@@ -7,9 +7,6 @@ class PopulationStatistics(GeneralStatistics):
         super().__init__()
         pass
 
-    def p_mean(self):
-        pass
-
     def p_var(self):
         pass
 

@@ -4,6 +4,7 @@ from calculator.multiplication import multiplication
 from calculator.division import division
 from calculator.nthPower import nth_power
 from calculator.nthRoot import nth_root
+from calculator.aggregate import aggregate
 
 
 class Calculator:
@@ -36,4 +37,6 @@ class Calculator:
         self.result = nth_root(a, n)
         return self.result
 
-
+    def aggr(self, a):
+        self.result = aggregate(a)
+        return self.result
