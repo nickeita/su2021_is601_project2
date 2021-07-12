@@ -7,12 +7,14 @@ services:
 
 before_install:
   - docker build -f Dockerfile -t python-stats-calc .
+  - pip install -U pip
+  - pip install -U pytest
 
 install:
   - pip install -r requirements.txt
+  - pip install ".[test]" .
 
-script:
-  - unittest
+script: pytest
 
 branches:
   only:
