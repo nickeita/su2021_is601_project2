@@ -12,7 +12,7 @@ install:
   - pip install -r requirements.txt
 
 script:
-  - python -m ./src/runTestProcess.py
+  - python -m runTestProcess.py
 
 branches:
   only:
