@@ -1,4 +1,3 @@
-# @staticmethod
 def division(a, b):
     try:
         return a / b

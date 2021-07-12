@@ -2,7 +2,7 @@ def general_mode(a):
     a.sort()
     count = 0
     frequency = 0
-    for i in range(len(a)):
+    for i in range(len(a)-1):
         if i > 0 and a[i] == a[i-1]:
             count += 1
             if count > frequency:

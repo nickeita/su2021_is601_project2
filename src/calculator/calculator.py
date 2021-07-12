@@ -5,6 +5,8 @@ from calculator.division import division
 from calculator.nthPower import nth_power
 from calculator.nthRoot import nth_root
 from calculator.aggregate import aggregate
+from calculator.nSquared import n_squared
+from calculator.squareRoot import square_root
 
 
 class Calculator:
@@ -27,6 +29,14 @@ class Calculator:
 
     def div(self, a, b):
         self.result = division(a, b)
+        return self.result
+
+    def sqr(self, a):
+        self.result = n_squared(a)
+        return self.result
+
+    def sqroot(self, a):
+        self.result = square_root(a)
         return self.result
 
     def npow(self, a, n):

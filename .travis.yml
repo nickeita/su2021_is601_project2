@@ -7,15 +7,12 @@ services:
 
 before_install:
   - docker build -f Dockerfile -t python-stats-calc .
-  - pip install -U pip
-  - pip install -U unittest
-  - pip install codecov
 
 install:
   - pip install -r requirements.txt
-  - pip install ".[test]" .
 
-script: unittest
+script:
+  - python -m ./src/runTestProcess.py
 
 branches:
   only:
