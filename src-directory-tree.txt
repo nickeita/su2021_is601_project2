@@ -1,0 +1,42 @@
+
+    /src---------/
+                 |calculator------------/
+                                        | __init__.py
+                                        | addition.py
+                                        | calculator.py
+                                        | division.py
+                                        | multiplication.py
+                                        | nSquared.py
+                                        | nthPower.py
+                                        | nthRoot.py
+                                        | squareRoot.py
+                                        | subtraction.py
+                 |generalStatistics-----/
+                                        | __init__.py
+                                        | generalMean.py
+                                        | generalMedian.py
+                                        | generalMode.py
+                                        | generalStatistics.py
+                 |populationStatistics--/
+                                        | __init__.py
+                                        | populationStandardDeviation.py
+                                        | populationStatistics.py
+                                        | populationVariance.py
+                 |randomData------------/
+                                        | __init__.py
+                                        | randomData.py
+                                        | randomPopulation.py
+                 |sampleStatistics------/
+                                        |
+                 |statsAuxiliary--------/
+                                        | aggregate.py
+                                        | statsAuxiliary.py
+                                        | varianceInput.py
+                 |tests-----------------/
+                                        | __init__.py
+                                        | calculatorTest.py
+                                        | generalStatisticsTest.py
+                                        | populationStatisticsTest.py
+                                        | sampleStatisticsTest.py
+                 | __init__.py
+                 | runProcesses.py
