@@ -1,4 +1,6 @@
 from generalStatistics.generalStatistics import GeneralStatistics
+from sampleStatistics.sampleVariance import sample_variance
+from sampleStatistics.sampleStandardDeviation import sample_std_deviation
 
 
 class SampleStatistics(GeneralStatistics):
@@ -9,10 +11,9 @@ class SampleStatistics(GeneralStatistics):
         pass
 
     def s_var(self, a):
-        b = self.diff_sqr_sum(a)
-        self.result = self.div(b, len(a)-1)
+        self.result = sample_variance(a)
         return self.result
 
     def s_std_dev(self, a):
-        self.result = (self.sqroot(self.s_var(a)))
+        self.result = sample_std_deviation(a)
         return self.result

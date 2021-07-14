@@ -1,4 +1,6 @@
 from generalStatistics.generalStatistics import GeneralStatistics
+from populationStatistics.populationVariance import population_variance
+from populationStatistics.populationStandardDeviation import population_std_deviation
 
 
 class PopulationStatistics(GeneralStatistics):
@@ -9,11 +11,10 @@ class PopulationStatistics(GeneralStatistics):
         pass
 
     def p_var(self, a):
-        b = self.diff_sqr_sum(a)
-        self.result = self.div(b, len(a))
+        self.result = population_variance(a)
         return self.result
 
     def p_std_dev(self, a):
-        self.result = self.sqroot(self.p_var(a))
+        self.result = population_std_deviation(a)
         return self.result
 

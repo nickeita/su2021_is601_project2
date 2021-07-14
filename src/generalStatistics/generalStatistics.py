@@ -1,19 +1,18 @@
-from calculator.calculator import Calculator
+from statsAuxiliary.statsAuxiliary import StatsAuxiliary
 from generalStatistics.generalMedian import general_median
 from generalStatistics.generalMode import general_mode
+from generalStatistics.generalMean import general_mean
 
 
-class GeneralStatistics(Calculator):
+class GeneralStatistics(StatsAuxiliary):
     result = 0
-    # length = 1
 
     def __init__(self):
         super().__init__()
         pass
 
     def g_mean(self, a):
-        # self.length = len(a)
-        self.result = self.div(self.aggr(a), len(a))
+        self.result = general_mean(a)
         return self.result
 
     def g_median(self, a):
@@ -24,12 +23,4 @@ class GeneralStatistics(Calculator):
         self.result = general_mode(a)
         return self.result
 
-    def diff_sqr_sum(self, a):
-        b = []
-        c = []
-        for i in range(len(a)):
-            b.append(self.sub(a[i], self.g_mean(a)))
-            c.append(self.sqr(b[i]))
-        self.result = self.aggr(c)
-        return self.result
 
