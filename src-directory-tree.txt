@@ -27,7 +27,9 @@
                                         | randomData.py
                                         | randomPopulation.py
                  |sampleStatistics------/
-                                        |
+                                        | sampleStandardDeviation.py
+                                        | sampleStatistics.py
+                                        | sampleVariance.py
                  |statsAuxiliary--------/
                                         | aggregate.py
                                         | statsAuxiliary.py
