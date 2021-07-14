@@ -14,10 +14,19 @@ A python statistics calculator unit testing docker image
   6. Test each class and method as they are created on local machine
   7. Link repository to Travis CI
   8. Push git commits to Github
-  9. Fix build issues with Travis CI
+  9. CI build with Travic CI 
+  10. Edit .travis.yml file to fix Travis CI build issues
+  11. Repeat step 8 and 9
+  12. Refactor repository
+  13. Repeat step 9
+
+
 
 ## src Directory Tree
+[Repository Tree .txt File](/src-directory-tree.txt)
+
+
 ![Project Directory Tree](/images/06-src-directory-tree.png)
 
-## PyCharm Screenshots
+## PyCharm Screenshot
 ![Sucessful Tests](/images/05-added-new-tests.png)
